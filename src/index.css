@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg-greige: #F4F7FB; /* Primary background - Light blue-grey */
+  --color-surface: #FFFFFF; /* Solid white card surface */
+  --color-primary: #2563EB; /* Primary Blue */
+  --color-primary-hover: #1D4ED8; /* Primary Blue Hover */
+  --color-primary-soft: #DBEAFE; /* Very soft blue for subtle backgrounds */
+  --color-ai: #06B6D4; /* Cyan for AI features */
+  --color-ai-soft: #CFFAFE; /* Soft cyan for AI backgrounds */
+  --color-success: #16A34A; /* Success / Recovered */
+  --color-attention: #F59E0B; /* Amber / Warning */
+  --color-danger: #EF4444; /* Error / Lost */
+  --color-text-main: #172033; /* Main text */
+  --color-text-secondary: #64748B; /* Secondary text */
+  --color-text-tertiary: #94A3B8;
+  --color-border-subtle: #DCE4EF; /* Borders */
+  
+  --color-navy: #0B1F3A; /* Sidebar */
+  --color-navy-light: #102A4C; /* Header */
+}
+
+@layer base {
+  body {
+    @apply text-text-main font-sans antialiased;
+    background-color: #F4F7FB;
+  }
+}
+
+/* Custom scrollbar for an elegant feel */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(37, 99, 235, 0.2);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(37, 99, 235, 0.4);
+}
